@@ -1,0 +1,133 @@
+
+.slide-show {
+    position: relative;
+    font-family:'lato';
+    height:100vh;
+    max-height:800px;
+    overflow: hidden;
+    transition: 0.4s all ease-in;
+}
+.text-content {
+    position: relative;
+    width:40vw;
+    top:30vh;
+
+    animation:textFading 10s infinite;
+}
+.slide-show .text-content h1 {
+    font-size:70px;
+    font-weight: 1000;
+    letter-spacing: 0.2px;
+    
+}
+.slide-show .text-content p {
+    font-size:22px;
+    font-weight: 1000;
+    margin-top:14px;
+}
+.slide-show .text-content button {
+    position: relative;
+    font-weight: bold;
+    height:7vh;
+    width:10vw;
+    background-color: black;
+    border:0;
+    color:white;
+    font-size:calc(0.5em + 0.8vw);
+    min-width: 60px;
+    margin-top:60px;
+}
+.slide-show img{
+    position: absolute;
+    width:  42vw;
+    bottom:0;
+    z-index: 1;
+    pointer-events: none;
+}
+.slide-show .background-image {
+    width:50vw;
+    opacity:0.05;
+    z-index: 0;
+
+}
+.slide-show .loading-bar {
+    position: absolute;
+    z-index:10;
+    background-color:black;
+    height:4px; 
+    bottom:0;
+    width:1px;
+    animation: loadingBar 5s infinite;
+}
+
+.slide-show .slide-image {
+    opacity:0;
+}
+
+.slide-show .slide-image-active {
+    animation: imageFade 5s infinite;
+}
+
+
+/* The mutable alignment properties */
+
+.alignment-left .text-content{
+    left:15vw;
+}
+.alignment-left .slide-image-active .display-image {
+    animation:leftImage 5s infinite;
+    opacity:1;
+}
+.alignment-left .background-image {
+    right:-6vw;
+}
+.alignment-right .text-content {
+    left:50vw;
+}
+.alignment-right .slide-image-active .display-image {
+    animation:rightImage 5s infinite;
+}
+.alignment-right .background-image {
+    left:-1vw;
+}
+
+
+
+/* Animations */
+
+@keyframes textFading {
+    0%{opacity: 0}
+    10%{opacity:1}
+    40%{opacity:1}
+    50%{opacity: 0}
+    60%{opacity:1}
+    90%{opacity: 1}
+    100%{opacity:0}
+}
+
+@keyframes loadingBar {
+    0%{width:0vw}
+    95%{width:100vw}
+    100%{width:100vw}
+}
+
+@keyframes imageFade {
+    0%{opacity:0}
+    20%{opacity:1}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes leftImage {
+    0%{right:4vw;opacity:0}
+    30%{right:12vw;opacity:1}
+    90%{right:12vw;opacity: 1;}
+    100%{right:12vw;opacity:0}
+}
+
+@keyframes rightImage {
+    0%{left:4vw;opacity:0}
+    30%{left:6vw;opacity:1}
+    90%{left:6vw;opacity: 1;}
+    100%{left:6vw;opacity:0}
+}
