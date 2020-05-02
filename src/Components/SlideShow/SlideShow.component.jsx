@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import Icon from '@iconify/react';
+import bxMouse from '@iconify/icons-bx/bx-mouse';
 import Img from 'react-image';
 import "./SlideShow.style.css";
 // All images has the same ratio of 1.05 to 1
@@ -79,6 +81,8 @@ class SlideShow extends Component {
                 <Img className='background-image' src={image}/>    
             </div>
             <div className='loading-bar'></div>
+            <Icon className='icon-mouse' icon={bxMouse}/>
+  
         </div>
         )
     }
