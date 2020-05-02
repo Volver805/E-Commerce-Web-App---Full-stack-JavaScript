@@ -1,0 +1,70 @@
+nav {
+    position: absolute;
+    z-index: 20;
+    height:60px;
+    width:100vw;
+    font-weight: bold;
+}
+.nav-container {
+    position: relative;
+    top:18px;
+    height:40px;
+    width:87vw;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+
+    
+    div {
+        height:100%;
+        line-height: 44px;
+        vertical-align: middle;
+    }
+    .logo {
+        position: relative;
+        font-size:18px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+
+        img {
+            display: inline-block;
+            width:24px;
+            position: relative;
+            top:3px;
+            margin-right: 14px;
+        }
+    }
+    .nav {
+        text-align: center;
+        font-weight: 1000;
+        font-size:14px;
+        span {
+            margin:0 1vw;
+            cursor: pointer;
+        }
+
+        #nav-button-shop::after {
+            content: " ";
+            position: relative;
+            bottom:3px;
+            display:inline-block;
+            width:7px;
+            height:7px;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            transform: rotate(45deg);
+            margin-left:5px;
+        }
+
+    }
+    .buttons {
+        font-size: 24px;
+        svg {
+            position: relative;
+            top:8px;
+            float:right;
+            margin-left:20px;
+            cursor: pointer;
+        }
+    }
+}

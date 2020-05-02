@@ -3,7 +3,7 @@
     position: relative;
     font-family:'lato';
     height:100vh;
-    max-height:800px;
+    max-height:900px;
     overflow: hidden;
     transition: 0.4s all ease-in;
 }
@@ -39,7 +39,7 @@
 }
 .slide-show img{
     position: absolute;
-    width:  42vw;
+    width:  45vw;
     bottom:0;
     z-index: 1;
     pointer-events: none;
@@ -60,10 +60,6 @@
     animation: loadingBar 5s infinite;
 }
 
-.slide-show .slide-image {
-    opacity:0;
-}
-
 .slide-show .slide-image-active {
     animation: imageFade 5s infinite;
 }
@@ -74,7 +70,7 @@
 .alignment-left .text-content{
     left:15vw;
 }
-.alignment-left .slide-image-active .display-image {
+.alignment-left .slide-image .display-image {
     animation:leftImage 5s infinite;
     opacity:1;
 }
@@ -84,7 +80,7 @@
 .alignment-right .text-content {
     left:50vw;
 }
-.alignment-right .slide-image-active .display-image {
+.alignment-right .slide-image .display-image {
     animation:rightImage 5s infinite;
 }
 .alignment-right .background-image {
@@ -120,14 +116,14 @@
 
 @keyframes leftImage {
     0%{right:4vw;opacity:0}
-    30%{right:12vw;opacity:1}
-    90%{right:12vw;opacity: 1;}
-    100%{right:12vw;opacity:0}
+    30%{right:8vw;opacity:1}
+    90%{right:8vw;opacity: 1;}
+    100%{right:6vw;opacity:0}
 }
 
 @keyframes rightImage {
-    0%{left:4vw;opacity:0}
-    30%{left:6vw;opacity:1}
-    90%{left:6vw;opacity: 1;}
+    0%{left:6vw;opacity:0}
+    30%{left:2vw;opacity:1}
+    90%{left:2vw;opacity: 1;}
     100%{left:6vw;opacity:0}
 }
