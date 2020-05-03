@@ -74,7 +74,7 @@ class SlideShow extends Component {
             <div className='text-content'>
                 <h1>{this.state.header}</h1>
                 <p style={{color:this.state.secondaryColor}}>{this.state.paragraph}</p>
-                <button>Shop Now</button>    
+                <button className='black-button'>Shop Now</button>    
             </div>
             <div className='slide-image'>
                 <Img className='display-image' src={image}/>

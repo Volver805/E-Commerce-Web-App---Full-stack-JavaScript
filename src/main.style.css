@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin:0;
-    font-family:'lato';
+    font-family:'open sans';
 }
 html {
     height:100%;
@@ -22,4 +22,13 @@ button:focus,input:focus {
     font-size:40px;
     bottom:10px;
     left: calc(50vw - 15px);
+}
+.black-button {
+    position: relative;
+    font-weight: bold;
+    background-color: black;
+    border:0;
+    color:white;
+    font-size:calc(0.5em + 0.8vw);
+    min-width: 60px;
 }

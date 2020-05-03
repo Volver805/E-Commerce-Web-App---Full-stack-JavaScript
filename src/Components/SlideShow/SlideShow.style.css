@@ -26,15 +26,9 @@
     margin-top:14px;
 }
 .slide-show .text-content button {
-    position: relative;
-    font-weight: bold;
-    height:7vh;
     width:10vw;
-    background-color: black;
-    border:0;
-    color:white;
-    font-size:calc(0.5em + 0.8vw);
-    min-width: 60px;
+    height:7vh;
+    
     margin-top:60px;
 }
 .slide-show img{
